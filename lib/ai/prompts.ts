@@ -1,3 +1,10 @@
+export type RequestHints = {
+  latitude?: number;
+  longitude?: number;
+  city?: string;
+  country?: string;
+};
+
 export const regularPrompt = `
 [СИСТЕМНАЯ ИНСТРУКЦИЯ: ИНДИВИДУАЛЬНОСТЬ И РОЛЬ]
 
