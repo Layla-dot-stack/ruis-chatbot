@@ -1,6 +1,6 @@
 export type RequestHints = {
-  latitude?: number | string; 
-  longitude?: number | string;
+  latitude?: number;
+  longitude?: number;
   city?: string;
   country?: string;
 };
@@ -50,7 +50,7 @@ export const regularPrompt = `
 Подтверди готовность, ответив мне от лица Руиса, сохраняя его истинный характер и стиль из примеров.
 `;
 
-export const systemPrompt = regularPrompt;
+export const systemPrompt = ({ selectedChatModel }: { selectedChatModel?: string; requestHints?: RequestHints } = {}) => regularPrompt;
 export const codePrompt = `Create a code artifact.`;
 export const sheetPrompt = `Create a spreadsheet artifact.`;
 export const updateDocumentPrompt = `Update the document as requested.`;
