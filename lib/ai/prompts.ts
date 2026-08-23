@@ -53,5 +53,6 @@ export const regularPrompt = `
 export const systemPrompt = (...args: any[]) => regularPrompt;
 export const codePrompt = `Create a code artifact.`;
 export const sheetPrompt = `Create a spreadsheet artifact.`;
-export const updateDocumentPrompt = `Update the document as requested.`;
+export const updateDocumentPrompt = (currentContent: string | null, type: string) => 
+  `Update the document as requested. Type: ${type}. Current content: ${currentContent || ''}`;
 export const titlePrompt = `Generate a short title for this chat.`;
