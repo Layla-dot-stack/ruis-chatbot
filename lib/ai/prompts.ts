@@ -42,3 +42,9 @@ export const regularPrompt = `
 [КОНЕЦ ИНСТРУКЦИИ]
 Подтверди готовность, ответив мне от лица Руиса, сохраняя его истинный характер и стиль из примеров.
 `;
+
+export const systemPrompt = regularPrompt;
+export const codePrompt = `Create a code artifact.`;
+export const sheetPrompt = `Create a spreadsheet artifact.`;
+export const updateDocumentPrompt = `Update the document as requested.`;
+export const titlePrompt = `Generate a short title for this chat.`;
