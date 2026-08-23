@@ -1,6 +1,6 @@
 export type RequestHints = {
-  latitude?: number;
-  longitude?: number;
+  latitude?: number | string; 
+  longitude?: number | string;
   city?: string;
   country?: string;
 };
